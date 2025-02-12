@@ -57,7 +57,7 @@ npm install -g truffle
 
 2. **Clone and Install**
 ```bash
-git clone [<repository-url>](https://github.com/adisusilayasa/voting-web3)
+git clone https://github.com/adisusilayasa/voting-web3.git
 cd voting-web3
 npm install
 ```
