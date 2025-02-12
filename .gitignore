@@ -1,2 +1,11 @@
-/build/contracts
-/node_modules
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+.DS_Store
+build/
+
+# Local development
+*.local

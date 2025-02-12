@@ -1,10 +1,9 @@
 const VotingSystem = artifacts.require("VotingSystem");
-const { time } = require('@openzeppelin/test-helpers');
 
 module.exports = async function(deployer) {
   try {
     // Deploy the VotingSystem contract with some initial proposal names
-    const proposalNames = ["Proposal 1", "Proposal 2", "Proposal 3"];
+    const proposalNames = ["Jonathan Doe", "John Lawliet", "Ikuzo Kilonzo"];
     await deployer.deploy(VotingSystem, proposalNames);
     const votingInstance = await VotingSystem.deployed();
 

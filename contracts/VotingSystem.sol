@@ -173,7 +173,7 @@ contract VotingSystem {
     function getVoterDetails(address voterAddress) 
         external 
         view 
-        returns (bool isRegistered, bool hasVoted, uint256 vote) 
+        returns (bool isRegistered, bool hasVoted, uint256 votedFor) 
     {
         Voter memory voter = voters[voterAddress];
         return (voter.isRegistered, voter.hasVoted, voter.vote);
@@ -198,6 +198,11 @@ contract VotingSystem {
         isActive = isStarted && !isEnded && !stopped;
         timeLeft = isEnded ? 0 : (isStarted ? votingEnd - block.timestamp : votingEnd - votingStart);
         return (isStarted, isEnded, isActive, timeLeft);
+    }
+
+    function toggleEmergencyStop() external onlyAdmin {
+        stopped = !stopped;
+        emit EmergencyStop(stopped);
     }
 
     function getAllProposals() external view returns (

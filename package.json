@@ -1,5 +1,13 @@
 {
   "devDependencies": {
-    "@openzeppelin/test-helpers": "^0.5.16"
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.7",
+    "solidity-coverage": "^0.7.22",
+    "truffle-assertions": "^0.9.2"
+  },
+  "dependencies": {
+    "hardhat": "^2.22.18"
   }
 }
