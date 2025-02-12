@@ -81,9 +81,6 @@ truffle compile
 ```bash
 # Run all tests
 truffle test
-
-# Run coverage
-truffle run coverage
 ```
 
 6. **Local Deployment**
@@ -99,7 +96,7 @@ migrate
 
 ### Sepolia Testnet Deployment
 
-1. Ensure your wallet has sufficient Sepolia ETH
+1. Ensure your wallet has sufficient Sepolia Testnet ETH
 2. Deploy using truffle:
 ```bash
 truffle migrate --network sepolia
